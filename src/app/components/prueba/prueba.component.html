@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <h1 class="text-center text-uppercase text-danger">Prueba de Angular</h1>
+    <table class="table table-bordered border-primary mt-5">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Email</th>
+          <th scope="col">First Name</th>
+          <th scope="col">Last Name</th>
+          <th scope="col">N° Documento</th>
+          <th scope="col">Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of Data">
+          <th scope="row">{{data.id}}</th>
+          <td>{{data.email}}</td>
+          <td>{{data.first_name}}</td>
+          <td>{{data.last_name}}</td>
+          <td>{{data.n_document}}</td>
+          <td>{{data.phone_number}}</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <span class="text-center">@JC911- <a target="_blank" href="https://jorgecastillo.pro">https://jorgecastillo.pro</a></span>
+
+  </div>
+</div>
